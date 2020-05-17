@@ -70,7 +70,7 @@ const App = () => {
   const [value, setValue] = useState([])
   // Render the Slate context.
   return (
-    <Slate editor={editor} value={value} onChange={value => setValue(value)} />
+    <Slate editor={editor} value={value} onChange={newValue => setValue(newValue)} />
   )
 }
 ```
